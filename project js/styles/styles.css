@@ -1,0 +1,197 @@
+/* Стилизація проєкта -
+index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.
+user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.
+блоки з короткою іфною про post - в ряд по 5 .
+post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд. Всі елементи котрі
+характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
+*/
+
+/*---------------INDEX-STYLES---------------*/
+body{
+    margin: 0;
+    overflow: hidden;
+    background-image: url("rectangles-647267_1280.webp");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+h2{
+    margin:15px 0 0 0;
+    font-family: 'Rubik', sans-serif;
+}
+h4{
+    margin:10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.wrap{
+    margin: 0;
+    padding:0 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    height:3vh;
+    width:6vw;
+    border: 1px darkgray solid;
+    border-radius: 7px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+.userBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5vh;
+    width: 20vw;
+    height: 15.8vh;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.1s ease-in;
+}
+.userBlock:hover{
+    border-radius: 20px;
+    background: rgb(127, 127, 127);
+}
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #7f7f7f;
+    margin: 30px 200px 10px 200px;
+    padding: 15px 40px;
+}
+/*---------------USER-STYLES---------------*/
+.innerBlock{
+    display: flex;
+}
+.key{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+.value{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+p{
+    margin:10px 5px;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 200px;
+}
+.postsButton{
+    height: 4vh;
+    width:10vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #7f7f7f;
+    width: calc(20% - 10px);
+    margin-bottom: 7px;
+    transition: 0.1s ease-in;
+}
+.post:hover{
+    transform: scale(1.05);
+}
+.postTitle{
+    display: flex;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    height:10vh;
+    padding:7px 20px;
+}
+.postButton{
+    margin-bottom: 1vh;
+}
+button:hover{
+    background: #ffffff;
+}
+/*---------------POST-STYLES----------------*/
+.id{
+    margin:10px 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+.title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+.postBody{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+.postWrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.postDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+    width:65vw;
+    height:23vh;
+    margin: 4vh 0 2vh 0;
+    border-radius: 10px;
+    background: #7f7f7f;
+}
+.comments{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    width: 70vw;
+    border-radius: 10px;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background: #7f7f7f;
+    width: calc(25% - 30px);
+    /*width: calc(20% - 30px);*/
+    margin-bottom: 15px;
+    transition: 0.1s ease-in;
+}
+.email{
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin: 5px 0;
+}
+.commentTitle{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 3px 2px;
+}
+.commentBody{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin: 5px 2px;
+}
+.comment:hover{
+    transform: scale(1.05);
+}
